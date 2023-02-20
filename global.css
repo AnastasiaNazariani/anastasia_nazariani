@@ -1,0 +1,16 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,300&display=swap");
+
+:root {
+  --green: #20c997;
+  --lightGreen: #7eeaca;
+  --white: white;
+  --darkWhite: #f8f9fa;
+  --black: black;
+  --lightGray: #212529;
+  --darkGray: #4d4d4d;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}

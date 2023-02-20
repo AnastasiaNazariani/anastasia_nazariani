@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Photon Website" />
+    <meta name="keywords" content="Photography,Gallery,Photon" />
+    <meta name="author" content="Anastasia Nazariani" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Home | Photon</title>
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+    <main class="photo-gallery">
+      <!-- picture 1 -->
+      <div class="gallery-picture">
+        <div class="picture-text-wrapper">
+          <div class="picture-text">
+            <h2>Nature</h2>
+            <a href="">MORE PHOTOS</a>
+          </div>
+        </div>
+        <img src="./assets/landing-image-3.webp" alt="" />
+      </div>
+      <!-- end of picture 1 -->
+
+      <!-- picture 2 -->
+      <div class="gallery-picture">
+        <div class="picture-text-wrapper">
+          <div class="picture-text">
+            <h2>Portrait</h2>
+            <a href="">MORE PHOTOS</a>
+          </div>
+        </div>
+        <img src="./assets/landing-image-2.webp" alt="" />
+      </div>
+      <!-- end of picture 2 -->
+
+      <!-- picture 3 -->
+      <div class="gallery-picture">
+        <div class="picture-text-wrapper">
+          <div class="picture-text">
+            <h2>Architecture</h2>
+            <a href="">MORE PHOTOS</a>
+          </div>
+        </div>
+        <img src="./assets/landing-image.webp" alt="" />
+      </div>
+      <!-- end of picture 3 -->
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- load jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <!-- end of load jquery -->
+
+    <!-- load navbar -->
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("navbar.html");
+      });
+    </script>
+    <!-- end of load navbar -->
+
+    <!-- load footer -->
+    <script>
+      $(function () {
+        $("#footer-placeholder").load("footer.html");
+      });
+    </script>
+    <!-- end of load footer -->
+  </body>
+</html>

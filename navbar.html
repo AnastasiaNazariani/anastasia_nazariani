@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="navbar.css" />
+  </head>
+  <div id="overlay" class="overlay"></div>
+  <nav class="navbar">
+    <div class="logo">Photon</div>
+    <div onclick="showMenu()" class="burger-icon">
+      <i class="fas fa-solid fa-bars"></i>
+    </div>
+    <ul class="navbar-menu">
+      <li>
+        <a href="/index.html"> HOME </a>
+      </li>
+      <li><a href="./services.html"> SERVICES </a></li>
+
+      <li>
+        <a href="./contact.html"> CONTACT </a>
+      </li>
+    </ul>
+
+    <ul style="margin-right: 0" class="navbar-menu">
+      <li><i class="fab fa-facebook-f"></i></li>
+      <li><i class="fab fa-twitter"></i></li>
+      <li><i class="fab fa-instagram"></i></li>
+      <li><i class="fab fa-linkedin-in"></i></li>
+    </ul>
+  </nav>
+  <div id="burger" class="burger">
+    <div onclick="showMenu()" id="burger-close-button" class="burger-close-button">
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+    <ul class="burger-menu">
+      <li>
+        <a href="/index.html"> HOME </a>
+      </li>
+      <li><a href="./services.html"> SERVICES </a></li>
+      <li>
+        <a href="./contact.html"> CONTACT </a>
+      </li>
+    </ul>
+
+    <ul class="burger-social-menu">
+      <li><i class="fab fa-facebook-f"></i></li>
+      <li><i class="fab fa-twitter"></i></li>
+      <li><i class="fab fa-instagram"></i></li>
+      <li><i class="fab fa-linkedin-in"></i></li>
+    </ul>
+  </div>
+
+  <script>
+    const burger = document.getElementById("burger");
+    const burgerCloseButton = document.getElementById("burger-close-button");
+    const overlay = document.getElementById("overlay");
+    const li = document.querySelectorAll("li");
+
+    for (const element in li) {
+      if (li[element].innerText?.trim().toLowerCase() === "home") {
+        if (window.location.href.includes("index.html")) li[element].classList.add("active");
+      }
+
+      if (window.location.href.includes(li[element].innerText?.trim().toLowerCase()))
+        li[element].classList.add("active");
+    }
+    let isOpen = false;
+    function showMenu() {
+      burger.style.right = isOpen ? "-100%" : "0";
+      overlay.style.display = isOpen ? "none" : "block";
+      overlay.style.opacity = isOpen ? "0" : "1";
+
+      isOpen = !isOpen;
+    }
+  </script>
+</html>

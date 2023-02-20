@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Photon Website" />
+    <meta name="keywords" content="Photography,Gallery,Photon" />
+    <meta name="author" content="Anastasia Nazariani" />
+    <link rel="stylesheet" href="./contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Contact Us | Photon</title>
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+    <h1 id="title">Contact Us</h1>
+    <div id="underline"></div>
+    <main class="container">
+      <form action="#">
+        <div class="form-row">
+          <div class="form-item">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" />
+          </div>
+
+          <div class="form-item">
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-item">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-item">
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" id="subject" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-item">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Write your notes or questions here..."
+              cols="20"
+              rows="10"
+            >
+            </textarea>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-item">
+            <button onclick="alert('Form submitted')" type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+      <div class="contact">
+        <div class="address">
+          <p id="address">Address</p>
+          <p>203 Fake St. Mountain View,</p>
+          <p>San Francisco, California, USA</p>
+        </div>
+        <div class="phone">
+          <p class="phone">Phone</p>
+          <p class="phoneNumber">+1 232 3235 324</p>
+        </div>
+
+        <div class="email">
+          <p class="email">Email Address</p>
+          <p id="emailAddress">youremail@domain.com</p>
+        </div>
+      </div>
+    </main>
+
+    <div style="width: 99%; margin: auto; text-align: center" id="footer-placeholder"></div>
+
+    <!-- load jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <!-- end of load jquery -->
+
+    <!-- load navbar -->
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("navbar.html");
+      });
+    </script>
+    <!-- end of load navbar -->
+
+    <!-- load footer -->
+    <script>
+      $(function () {
+        $("#footer-placeholder").load("footer.html");
+      });
+    </script>
+    <!-- end of load footer -->
+  </body>
+</html>

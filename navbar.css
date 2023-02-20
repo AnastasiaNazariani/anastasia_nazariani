@@ -1,0 +1,160 @@
+@import "global.css";
+
+.overlay {
+  opacity: 0;
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease-in-out;
+  z-index: 1;
+}
+
+/* navbar  */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.navbar-menu {
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+}
+
+.navbar-menu > li {
+  margin-right: 20px;
+  padding: 10px 5px;
+  font-size: 14px;
+  color: var(--black);
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-menu > li:hover {
+  color: var(--green);
+}
+
+.navbar-menu > li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  color: var(--black);
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-right: auto;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.active {
+  color: var(--green) !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar-menu {
+    display: none;
+  }
+}
+
+/* end of navbar */
+
+/* burger */
+.burger {
+  width: 300px;
+  height: calc(100vh);
+  position: fixed;
+  top: 0;
+  right: -100%;
+  padding-top: 20px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  transition: all 0.4s ease-in-out;
+}
+
+.burger-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.burger-close-button {
+  font-size: 30px;
+  cursor: pointer;
+  align-self: self-end;
+  color: var(--darkGray);
+  margin: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.burger-close-button:hover {
+  filter: brightness(0.5);
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.burger-menu > li {
+  margin-bottom: 14px;
+  margin-left: 10px;
+  font-size: 20px;
+  line-height: 34px;
+  color: var(--lightGray);
+}
+
+.burger-menu > li > a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  padding: 10px 5px;
+  transition: color 0.3s ease-in-out;
+}
+
+.burger-menu > li > a:hover {
+  color: var(--green);
+}
+
+.burger-social-menu {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.burger-social-menu > li {
+  padding: 10px 5px;
+  margin-bottom: 14px;
+  margin-left: 10px;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--lightGray);
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.burger-social-menu > li:hover {
+  color: var(--green);
+}
+
+@media screen and (max-width: 1024px) {
+  .burger-icon {
+    display: block;
+  }
+}
+
+/* end of burger */

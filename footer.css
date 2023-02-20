@@ -1,0 +1,22 @@
+@import "global.css";
+
+footer {
+  margin: 24px;
+}
+
+footer > p {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--darkGray);
+}
+
+.footer-link {
+  color: var(--green);
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+  filter: brightness(0.5);
+}
